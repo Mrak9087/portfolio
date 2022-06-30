@@ -1,8 +1,8 @@
-.menu {
+.header {
     position: sticky;
     display: flex;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 1.5rem;
     background-color: #353232;
 }
 
@@ -13,8 +13,8 @@
 .menu-item {
     display: block;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 0.5rem 1rem;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 2rem;
 }
