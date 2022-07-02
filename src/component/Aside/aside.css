@@ -1,11 +1,11 @@
 .aside {
     position: sticky;
     top: 0;
-    width: 270px;
+    width: 27rem;
     min-height: 100%;
     background-color: var(--bg-black-100);
-    padding: 30px;
-    padding-top: 50px;
+    padding: 3rem;
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;

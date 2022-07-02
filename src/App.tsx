@@ -1,13 +1,15 @@
 import React from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Aside from "./component/Aside";
-import Container from "./component/Container";
+
 
 import Header from "./component/Header";
+import Aside from "./component/Aside";
+import Container from "./component/Container";
 import Menu from "./component/Menu";
 import Main from "./pages/Main";
 import Work from "./pages/Work";
+import Logo from "./component/Logo";
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
           {/* <Header /> */}
           <div className="wrapper">
             <Aside>
+              <Logo />
               <Menu />
             </Aside>
             <Routes>

@@ -7,8 +7,18 @@ import { NavLink } from "react-router-dom";
 const Menu = () => {
     return (
         <nav className="navVert">
-            <div className="menuItem"><FontAwesomeIcon icon={faHome} size="2x" className="menuIcon"/> <NavLink to='/' className="menuLink">Home</NavLink></div>
-            <div className="menuItem"><FontAwesomeIcon icon={faBriefcase} size="2x" className="menuIcon"/> <NavLink to='/work' className="menuLink">Portfolio</NavLink></div>
+            <div className="menuItem">
+                <NavLink to='/' className="menuLink"> 
+                    <FontAwesomeIcon icon={faHome} size="1x" className="menuIcon"/>
+                    Home
+                </NavLink>
+            </div>
+            <div className="menuItem">
+                <NavLink to='/work' className="menuLink">
+                    <FontAwesomeIcon icon={faBriefcase} size="1x" className="menuIcon"/> 
+                    Portfolio
+                </NavLink>
+            </div>
         </nav>
     )
 }
