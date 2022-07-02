@@ -1,9 +1,14 @@
 import React from "react";
+import Container from "../../component/Container";
+
+import './main.css';
 
 const Main = () => {
     return (
         <div className="main">
-            Main
+            <Container>
+                Main
+            </Container>
         </div>
     )
 }

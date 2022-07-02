@@ -3,6 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 
 import Header from "./component/Header";
+import Menu from "./component/Menu";
 import Main from "./pages/Main";
 import Work from "./pages/Work";
 
@@ -11,6 +12,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Header />
+        <Menu />
         <Routes>
           <Route path="/" element={<Navigate to="/main" />} />
           <Route path="/main" element={<Main />}/>
