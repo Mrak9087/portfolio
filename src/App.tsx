@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
+import Aside from "./component/Aside";
+import Container from "./component/Container";
 
 import Header from "./component/Header";
 import Menu from "./component/Menu";
@@ -11,13 +13,19 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Header />
-        <Menu />
-        <Routes>
-          <Route path="/" element={<Navigate to="/main" />} />
-          <Route path="/main" element={<Main />}/>
-          <Route path="/work" element={<Work />}/>
-        </Routes>
+        <Container>
+          {/* <Header /> */}
+          <div className="wrapper">
+            <Aside>
+              <Menu />
+            </Aside>
+            <Routes>
+              <Route path="/" element={<Navigate to="/main" />} />
+              <Route path="/main" element={<Main />} />
+              <Route path="/work" element={<Work />} />
+            </Routes>
+          </div>
+        </Container>
       </div>
     </BrowserRouter>
   );
