@@ -1,0 +1,104 @@
+.main {
+    min-height: 100vh;
+    display: flex;
+    color: var(--text-black-900);
+    background-color: var(--bg-black-900);
+    padding: 0 3rep;
+}
+
+.mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+}
+
+.mainInfo {
+    flex: 0 0 60%;
+    max-width: 60%;
+    padding: 0 1.5rem;
+}
+
+.hello {
+    font-size: 2.8rem;
+    margin: 1.5rem 0;
+}
+
+.hello span {
+    font-family: 'Clicker Script', cursive;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--skin-color);
+}
+
+.myProfession{
+    font-size: 3rem;
+    margin: 1.5rem 0;
+}
+
+.typing {
+    color: var(--skin-color);
+}
+
+.mainInfo p {
+    margin-bottom: 7rem;
+    font-size: 2rem;
+    color: var(--text-black-700);
+}
+
+.mainImg {
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+    padding: 15px;
+}
+
+.mainImg::before {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
+    top: 0;
+    left: 0;
+}
+
+.mainImg::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
+    right: 0;
+    bottom: 0;
+}
+
+.mainImg img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1150px) {
+
+    .mainContainer{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .mainImg {
+        order: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainInfo {
+        order: 2;
+        flex-basis: auto;
+        max-width: 100%;
+    }
+}
+
+
