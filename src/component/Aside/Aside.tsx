@@ -8,7 +8,9 @@ interface IAside {
 
 const Aside = ({children}: IAside) => {
   return <div className="aside">
-    {children}
+    <div className="asideWrapper">
+      {children}
+    </div>
   </div>;
 };
 
