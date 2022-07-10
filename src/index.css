@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
+  border: 0;
 }
 
 :root {
@@ -17,11 +18,24 @@
   --skin-color: #ec1839;
 }
 
+html,
 body {
+  min-height: 100%;
   margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: Poppins, sans-serif;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
 }
 
 code {

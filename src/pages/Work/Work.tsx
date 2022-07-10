@@ -1,9 +1,10 @@
 import React from "react";
+import SectionTitle from "../../component/SectionTitle";
 
 const Work = () => {
     return (
         <div className="work">
-            Work
+            <SectionTitle text="Work" />
         </div>
     )
 }
