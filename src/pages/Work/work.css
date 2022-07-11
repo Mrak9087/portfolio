@@ -1,0 +1,11 @@
+.work{
+    width: 100%;
+}
+
+.workContent {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
