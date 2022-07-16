@@ -12,7 +12,7 @@ const Main = () => {
             Hello, my name is <span>Maxim</span>
           </h3>
           <h3 className="myProfession">
-            I`m a <span className="typing">Frontend Development</span>
+            I`m a <span className="typing">Junior Frontend Developer</span>
           </h3>
           <p>
             I have experience in programming in Delphi. I created clients to work with

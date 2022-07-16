@@ -1,7 +1,41 @@
 .card {
     display: block;
-    width: 27rem;
-    border: 3px solid var(--text-black-900);
+    position: relative;
+    width: 30rem;
+    height: 40rem;
+    background-color: var(--bg-black-100);
+}
+
+.card::before{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -2;
+}
+
+.card::after{
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    z-index: -2;
+    transition: all 0.5s ease;
+    
+}
+
+.card::after,
+.card::before {
+    background-image: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
+    pointer-events: none;
+}
+
+.card:hover::after {
+    filter: blur(15px);
 }
 
 .cardImg {
