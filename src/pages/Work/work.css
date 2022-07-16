@@ -1,9 +1,11 @@
 .work{
     width: 100%;
+    color: var(--text-black-900);
+    background-color: var(--bg-black-900);
 }
 
 .workContent {
-    padding: 1.5rem;
+    padding: 3rem 1.5rem;
     display: flex;
     justify-content: center;
     gap: 1rem;

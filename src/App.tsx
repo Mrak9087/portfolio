@@ -10,6 +10,7 @@ import Menu from "./component/Menu";
 import Main from "./pages/Main";
 import Work from "./pages/Work";
 import Logo from "./component/Logo";
+import SwitcherTheme from "./component/SwitcherTheme";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
               <Route path="/work" element={<Work />} />
             </Routes>
           </div>
+          <SwitcherTheme />
         </Container>
       </div>
     </BrowserRouter>

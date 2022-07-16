@@ -3,7 +3,6 @@
     position: relative;
     width: 30rem;
     height: 40rem;
-    background-color: var(--bg-black-100);
 }
 
 .card::before{
@@ -13,7 +12,7 @@
     left: -2px;
     right: -2px;
     bottom: -2px;
-    z-index: -2;
+    z-index: 0;
 }
 
 .card::after{
@@ -23,7 +22,7 @@
     left: -2px;
     right: -2px;
     bottom: -2px;
-    z-index: -2;
+    z-index: 0;
     transition: all 0.5s ease;
     
 }
@@ -36,6 +35,14 @@
 
 .card:hover::after {
     filter: blur(15px);
+}
+
+.cardContent{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: var(--bg-black-100);
+    z-index: 1;
 }
 
 .cardImg {

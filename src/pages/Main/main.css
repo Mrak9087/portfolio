@@ -89,6 +89,7 @@
 
     .mainImg {
         flex-basis: auto;
+        max-width: 60%;
         order: 1;
         display: flex;
         justify-content: center;

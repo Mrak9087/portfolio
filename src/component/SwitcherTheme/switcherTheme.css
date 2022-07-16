@@ -1,0 +1,24 @@
+.switcherTheme {
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: var(--bg-black-900);
+    cursor: pointer;
+    border: 1px solid var(--text-black-900);
+    z-index: 10;
+    transition: all 0.5s ease;
+}
+
+.switcherTheme:hover {
+    transform: scale(1.08);
+}
+
+.switcherTheme svg {
+    color: var(--text-black-900);
+}

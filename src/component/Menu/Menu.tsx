@@ -10,13 +10,13 @@ const Menu = () => {
             <div className="menuItem">
                 <NavLink to='/' className="menuLink"> 
                     <FontAwesomeIcon icon={faHome} size="1x" className="menuIcon"/>
-                    Home
+                    <span>Home</span>
                 </NavLink>
             </div>
             <div className="menuItem">
                 <NavLink to='/work' className="menuLink">
                     <FontAwesomeIcon icon={faBriefcase} size="1x" className="menuIcon"/> 
-                    Portfolio
+                    <span>Portfolio</span>
                 </NavLink>
             </div>
         </nav>

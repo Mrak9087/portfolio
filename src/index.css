@@ -10,13 +10,14 @@
 
 :root {
   font-size: 10px;
-  --bg-black-900: #f2f2fc;
-  --bg-black-100: #fdf9ff;
-  --bg-black-50: #e8dfec;
-  --text-black-900: #302e4d;
-  --text-black-700: #504e70;
+
+  --bg-black-900: #1b1a25;
+  --bg-black-100: #32313f;
+  --bg-black-50: #3c393d;
+  --text-black-900: #f2f2fc;
+  --text-black-700: #fdf9ff;
   --skin-color: #ec1839;
-  --shadow: rgba(0,0,0,0.5)
+  --shadow: rgba(255,255,255,0.5);
 }
 
 html,
@@ -28,21 +29,24 @@ body {
   width: 100%;
 }
 
+body.light {
+  --bg-black-900: #f2f2fc;
+  --bg-black-100: #fdf9ff;
+  --bg-black-50: #e8dfec;
+  --text-black-900: #302e4d;
+  --text-black-700: #504e70;
+  --skin-color: #ec1839;
+  --shadow: rgba(0,0,0,0.5);
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: Poppins, sans-serif;
+  background-color: var(--bg-black-900);
 }
 
-body.dark {
-  --bg-black-900: #1b1a25;
-  --bg-black-100: #32313f;
-  --bg-black-50: #3c393d;
-  --text-black-900: #f2f2fc;
-  --text-black-700: #fdf9ff;
-  --skin-color: #ec1839;
-  --shadow: rgba(255,255,255,0.5)
-}
+
 
 #root {
   height: 100%;
