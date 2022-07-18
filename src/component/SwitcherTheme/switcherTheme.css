@@ -1,7 +1,7 @@
 .switcherTheme {
     position: fixed;
     top: 2rem;
-    right: 2rem;
+    right: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;

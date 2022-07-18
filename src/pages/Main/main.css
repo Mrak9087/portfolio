@@ -103,4 +103,28 @@
     }
 }
 
+@media screen and (max-width:767px) {
+    .main{
+        padding: 1rem;
+        padding-bottom: 10.5rem;
+    }
+
+    .hello{
+        font-size: 1.8rem;
+    }
+
+    .myProfession {
+        font-size: 2.4rem;
+    }
+
+    .mainInfo p {
+        font-size: 1.6rem;
+    }
+
+    .mainImg {
+        max-width: 80%;
+    }
+    
+}
+
 

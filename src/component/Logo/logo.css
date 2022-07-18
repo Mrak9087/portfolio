@@ -10,6 +10,7 @@
     font-size: 30px;
     letter-spacing: 5px;
     position: relative;
+    display: inline-block;
 }
 
 .logoLink span {
@@ -37,4 +38,10 @@
     border-right: 5px solid var(--skin-color);
     top: 0;
     right: 0;
+}
+
+@media screen and (max-width:430px) {
+    .logo {
+        display: none;
+    }
 }
