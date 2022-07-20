@@ -1,20 +1,20 @@
 import React from "react";
+import { ICard } from "../../model/interfaces";
 
 import './card.css';
 
-const Card = () => {
+const Card = ({deploy,description,images,repo,stack,title}: ICard) => {
     return (
         <>
             <a href="#" className="card">
                 <div className="cardContent">
                     <div className="cardImg">
-                        <img src="./images/trello.png" alt="trello" />
+                        <img src={`./images/${images[0]}`} alt={title} />
                     </div>
                     <div className="cardInfo">
-                        <h2 className="cardTitle">Trello Clone</h2>
+                        <h2 className="cardTitle">{title}</h2>
                         <p className="cardDesc">
-                        Система управления проектами – приложение помогающее достичь поставленные задачи 
-                        отдельному человеку в команде или группе разработчиков.
+                            {description}
                         </p>
                     </div>
                 </div>

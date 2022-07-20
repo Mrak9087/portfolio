@@ -1,0 +1,11 @@
+{"works":[
+    {
+        "id":1,
+        "title":"Trello Clone",
+        "description": "Система управления проектами – приложение помогающее достичь поставленные задачи отдельному человеку в команде или группе разработчиков.",
+        "images":["trello.png"],
+        "repo":"https://github.com/Mrak9087/project-management-app",
+        "deploy":"https://trello-clone-2022.netlify.app/",
+        "stack":"HTML, SCSS, React.js, Redux Toolkit"
+    }
+]}
