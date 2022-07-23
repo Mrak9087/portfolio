@@ -12,28 +12,18 @@ import Work from "./pages/Work";
 import Logo from "./component/Logo";
 import SwitcherTheme from "./component/SwitcherTheme";
 import Contacts from "./pages/Contacts";
+import Layout from "./Layout";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
-        <Container>
-          {/* <Header /> */}
-          <div className="wrapper">
-            <Aside>
-              <Logo />
-              <Menu />
-            </Aside>
-            <Routes>
-              <Route path="/" element={<Navigate to="/main" />} />
-              <Route path="/main" element={<Main />} />
-              <Route path="/work" element={<Work />} />
-              <Route path="/contacts" element={<Contacts />} />
-            </Routes>
-          </div>
-          <SwitcherTheme />
-        </Container>
-      </div>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+            <Route index element={<Main />} />
+            <Route path="work" element={<Work />} />
+            <Route path="contacts" element={<Contacts />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 }
