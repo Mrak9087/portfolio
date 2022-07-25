@@ -1,49 +1,31 @@
 import axios from "axios";
-import React, { useEffect, useState } from "react";
-import Card from "../../component/Card";
+import React, { memo, useEffect, useMemo, useState } from "react";
+import { useParams } from "react-router";
 import SectionTitle from "../../component/SectionTitle";
-import { ICard } from "../../model/interfaces";
+import { IAxiosCard, IWork } from "../../model/interfaces";
 import "./work.css";
 
-interface IAxiosCard {
-  works: ICard[];
-}
+
 
 const Work = () => {
-  const [cards, setCards] = useState<ICard[]>([]);
+    const {work} = useParams();
+    const [workItem, setWorkItem] = useState<IWork>();
 
-  const getCards = async () => {
-    const response = await axios.get<IAxiosCard>("./works.json");
-    const data: ICard[] = response.data.works;
-    setCards(data);
-  };
+    const getWork = async() => {
+        const response = await axios.get<IAxiosCard>("/works.json");
+        const data = response.data.works.find(item => item.name === work);
+        setWorkItem(data)
+    }
 
-  useEffect(() => {
-    getCards();
-  }, []);
+    useEffect(()=>{
+      getWork();
+    },[])
 
   return (
-    <div className="work">
-      <SectionTitle text="Work" />
-      <div className="workContent">
-        {cards.map(
-          ({ id, deploy, description, images, repo, stack, title }) => {
-            return (
-              <Card
-                    key={id}
-                    deploy={deploy}
-                    description={description}
-                    images={images}
-                    repo={repo}
-                    stack={stack}
-                    title={title} id={id}
-                />
-            );
-          }
-        )}
-      </div>
+    <div>
+        <SectionTitle text={workItem ? workItem.title : ""} />
     </div>
-  );
+  )
 };
 
 export default Work;

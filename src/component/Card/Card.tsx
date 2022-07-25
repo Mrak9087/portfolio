@@ -1,9 +1,9 @@
 import React from "react";
-import { ICard } from "../../model/interfaces";
+import { IWork } from "../../model/interfaces";
 
 import './card.css';
 
-const Card = ({deploy,description,images,repo,stack,title}: ICard) => {
+const Card = ({deploy,description,images,repo,stack,title}: IWork) => {
     return (
         <>
             <a href="#" className="card">

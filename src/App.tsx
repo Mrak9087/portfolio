@@ -13,6 +13,7 @@ import Logo from "./component/Logo";
 import SwitcherTheme from "./component/SwitcherTheme";
 import Contacts from "./pages/Contacts";
 import Layout from "./Layout";
+import Portfolio from "./pages/Portfolio";
 
 function App() {
   return (
@@ -20,7 +21,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
             <Route index element={<Main />} />
-            <Route path="work" element={<Work />} />
+            <Route path="portfolio" >
+              <Route index element={<Portfolio />} />
+              <Route path=":work" element={<Work />}/>
+            </Route>
             <Route path="contacts" element={<Contacts />} />
         </Route>
       </Routes>

@@ -14,7 +14,7 @@ const Menu = () => {
                 </NavLink>
             </div>
             <div className="menuItem">
-                <NavLink to='/work' className="menuLink">
+                <NavLink to='/portfolio' className="menuLink">
                     <FontAwesomeIcon icon={faBriefcase} size="1x" className="menuIcon"/> 
                     <span>Portfolio</span>
                 </NavLink>
