@@ -28,16 +28,15 @@ const Portfolio = () => {
       <SectionTitle text="Portfolio" />
       <div className="portfolioContent">
         {cards.map(
-          ({ id, deploy, description, images, repo, stack, title }) => {
+          ({ id, deploy, description, images, repo, stack, title, name }) => {
             return (
               <Card
                 key={id}
-                deploy={deploy}
                 description={description}
                 images={images}
-                repo={repo}
-                stack={stack}
-                title={title} id={id} name={""}                />
+                title={title} 
+                name={name}
+              />
             );
           }
         )}

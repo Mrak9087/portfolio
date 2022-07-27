@@ -1,12 +1,16 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import { IWork } from "../../model/interfaces";
 
 import './card.css';
 
-const Card = ({deploy,description,images,repo,stack,title}: IWork) => {
+type TCard = Omit<IWork,"deploy" | "stack" | "repo" | "id">
+
+const Card = ({description,images,name,title}: TCard) => {
+    const {pathname} = useLocation();
     return (
         <>
-            <a href="#" className="card">
+            <Link to={`${pathname}/${name}`} className="card">
                 <div className="cardContent">
                     <div className="cardImg">
                         <img src={`./images/${images[0]}`} alt={title} />
@@ -18,7 +22,7 @@ const Card = ({deploy,description,images,repo,stack,title}: IWork) => {
                         </p>
                     </div>
                 </div>
-            </a>
+            </Link>
         </>
     )
 }

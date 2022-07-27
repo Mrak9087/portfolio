@@ -1,3 +1,5 @@
+import { faGithub, faOctopusDeploy } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
 import React, { memo, useEffect, useMemo, useState } from "react";
 import { useParams } from "react-router";
@@ -22,8 +24,31 @@ const Work = () => {
     },[])
 
   return (
-    <div>
+    <div className="work">
         <SectionTitle text={workItem ? workItem.title : ""} />
+        <div className="workContent">
+          <div className="workDescr">{workItem?.description}</div>
+          <div className="workLinks">
+            <div className="linkItem">
+              <a href={workItem?.repo} target="_blank">
+                <FontAwesomeIcon icon={faGithub} />
+                <span>GitHub</span>
+              </a>
+            </div>
+            <div className="linkItem">
+              <a href={workItem?.deploy} target="_blank">
+                <FontAwesomeIcon icon={faOctopusDeploy} />
+                <span>Deploy</span>
+              </a>
+            </div>
+          </div>
+          <div className="workTechnologies">
+            <span>Technologies: </span><span>{workItem?.stack}</span>
+          </div>
+          <div className="workImages">
+            {workItem?.images.map((item,index) => <img key={index} src={`/images/${item}`} alt={item} />)}
+          </div>
+        </div>
     </div>
   )
 };
