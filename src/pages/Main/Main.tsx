@@ -42,7 +42,12 @@ const Main = () => {
       </div>
       <div className="mainRow">
         <SectionTitle text="Education"/>
-
+        <ul className="edList">
+          <li>Balashovsky Institute of Saratov State University / Applied Informatics in Economics</li>
+          <li>Courses RS School / JS/FE PRE-SCHOOL</li>
+          <li>Courses RS School / JAVASCRIPT/FRONT-END 2021Q3</li>
+          <li>Courses RS School / REACT 2022 Q1</li>
+        </ul>
       </div>
       <div className="mainRow">
         <SectionTitle text="Experience"/>
