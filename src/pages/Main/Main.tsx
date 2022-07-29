@@ -1,32 +1,53 @@
 import React from "react";
 import Container from "../../component/Container";
+import SectionTitle from "../../component/SectionTitle";
 
 import "./main.css";
 
 const Main = () => {
   return (
     <div className="main">
-      <div className="mainContainer">
-        <div className="mainInfo">
-          <h3 className="hello">
-            Hello, my name is <span>Maxim</span>
-          </h3>
-          <h3 className="myProfession">
-            I`m a <span className="typing">Junior Frontend Developer</span>
-          </h3>
-          <p>
-            I have experience in programming in Delphi. I created clients to work with
-            databases: MS SQL, MySQL, Firebird. I know SQL. Basic knowledge of
-            Java. The institute had a course on HTMS, CSS. After graduation, I
-            was engaged in page layout for some time. I love solving various
-            puzzles. I want to become a professional developer. I am ready to
-            develop in this direction.
-          </p>
-        </div>
-        <div className="mainImg">
-          <img src="./photo.jpg" alt="my photo" />
+      <div className="mainRow">
+        <div className="wrapperRow">
+          <div className="mainInfo">
+            <h3 className="hello">
+              Hello, my name is <span>Maxim</span>
+            </h3>
+            <h3 className="myProfession">
+              I`m a <span className="typing">Junior Frontend Developer</span>
+            </h3>
+            <p>
+              I have experience in programming in Delphi. I created clients to work with
+              databases: MS SQL, MySQL, Firebird. I know SQL. The institute had a course on HTMS, CSS. After graduation, I was engaged in page layout for some time. I like solving various
+              puzzles. I want to become a professional developer. I am ready to
+              develop in this direction.
+            </p>
+          </div>
+          <div className="mainImg">
+            <img src="./photo.jpg" alt="my photo" />
+          </div>
         </div>
       </div>
+      <div className="mainRow">
+        <SectionTitle text="Skills" />
+        <ul className="skillList">
+            <li>HTML, CSS, SCSS, JavaScript, Typescript</li>
+            <li>React, Redux</li>
+            <li>Git, GitHub</li>
+            <li>REST API, Axios</li>
+            <li>Visual Studio Code, WebStorm</li>
+            <li>Delphi (Rad Studio)</li>
+            <li>SQL</li>
+        </ul>
+      </div>
+      <div className="mainRow">
+        <SectionTitle text="Education"/>
+
+      </div>
+      <div className="mainRow">
+        <SectionTitle text="Experience"/>
+      </div>
+      
     </div>
   );
 };
