@@ -14,13 +14,10 @@ const Main = () => {
               Hello, my name is <span>Maxim</span>
             </h3>
             <h3 className="myProfession">
-              I`m a <span className="typing">Junior Frontend Developer</span>
+              I`m a <span className="typing">Frontend Developer</span>
             </h3>
             <p>
-              I have experience in programming in Delphi. I created clients to work with
-              databases: MS SQL, MySQL, Firebird. I know SQL. The institute had a course on HTMS, CSS. After graduation, I was engaged in page layout for some time. I like solving various
-              puzzles. I want to become a professional developer. I am ready to
-              develop in this direction.
+              I have been working in IT since 2010. Mostly worked as a system administrator as a programmer. At work I often had to program. I have experience in programming in Delphi. I created clients to work with databases: MS SQL, MySQL, Firebird. The institute had a course on HTMS, CSS. After graduation, I was engaged in page layout for some time. Participated in the development of the Institute's website. I’ve also created an application for learning languages on React and project management system Trello-clone on React + Typescript. I want to become a professional developer. I am ready to develop in this direction.
             </p>
           </div>
           <div className="mainImg">
