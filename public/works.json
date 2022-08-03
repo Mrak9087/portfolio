@@ -3,10 +3,60 @@
         "id":1,
         "name":"trello",
         "title":"Trello Clone",
-        "description": "Система управления проектами – приложение помогающее достичь поставленные задачи отдельному человеку в команде или группе разработчиков.",
+        "description": "A project management system is an application that helps an individual in a team or a group of developers achieve their goals.",
         "images":["trello.png"],
         "repo":"https://github.com/Mrak9087/project-management-app",
         "deploy":"https://trello-clone-2022.netlify.app/",
         "stack":"HTML, SCSS, React.js, Redux Toolkit"
+    },
+    {
+        "id":2,
+        "name":"rslang",
+        "title":"RS Lang",
+        "description": "RS Lang is an application for learning foreign words with the technique of interval repetition, tracking individual progress and mini-games.",
+        "images":["rslang.png"],
+        "repo":"https://github.com/Mrak9087/rslang",
+        "deploy":"https://rs-lang2022.netlify.app/",
+        "stack":"HTML, SCSS, React.js"
+    },
+    {
+        "id":3,
+        "name":"christmas",
+        "title":"Christmas",
+        "description": "A game where you can choose your favorite toys, decorate a Christmas tree and make a lovely card for your friends and family. This is a single page application.",
+        "images":["christmas.png"],
+        "repo":"https://github.com/Mrak9087/christmas-task",
+        "deploy":"https://mrak9087.github.io/christmas-task/christmas-task/",
+        "stack":"HTML, CSS, TS"
+    },
+    {
+        "id":4,
+        "name":"artquiz",
+        "title":"Art Quiz",
+        "description": "An entertaining game for art lovers that has two game modes - artist quiz or picture quiz. In the settings, you can change the language, select a time mode, turn on or turn off the sound. Local storage stores data about completed rounds and the settings. This game is a single page application.",
+        "images":["art-quiz.png"],
+        "repo":"https://github.com/Mrak9087/art-quiz",
+        "deploy":"https://mrak9087.github.io/art-quiz/art-quiz/",
+        "stack":"HTML, CSS, TS"
+    },
+    {
+        "id":4,
+        "name":"momentum",
+        "title":"Momentum",
+        "description": "Analog of a Chrome application . The app shows the time, date and weather. The background image and greeting change depending on the time of day. The app also has an image slider, an audio player, a quote block, a todo list and a lot of configuration options (language, list of blocks, image source, image categories). Local storage stores a user name and a selected location.",
+        "images":["momentum.png"],
+        "repo":"https://github.com/Mrak9087/momentum",
+        "deploy":"https://mrak9087.github.io/momentum/momentum/",
+        "stack":"HTML, CSS, TS"
+    },
+    {
+        "id":7,
+        "name":"asyncRace",
+        "title":"async-race",
+        "description": "Your customer has an idea to spend his money. He has hired some engineers who installed some radio-controlled equipment 📻 to real cars 🚗. To the all his collection of cars to be precise. He is eager to create kind of drag-racing competition in order to discover which car fastest. !!! To work, you need to start the server locally. The description is on GitHub.",
+        "images":["async-race.png"],
+        "repo":"https://github.com/Mrak9087/async-race",
+        "deploy":"https://mrak9087.github.io/async-race/async-race/",
+        "stack":"HTML, CSS, TS"
     }
 ]}

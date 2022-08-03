@@ -42,6 +42,8 @@
     height: 100%;
     position: relative;
     background-color: var(--bg-black-100);
+    padding-bottom: 1.5rem;
+    overflow: hidden;
     z-index: 1;
 }
 
@@ -54,6 +56,8 @@
 }
 
 .cardInfo{
+    overflow-y: hidden;
+    max-height: 23rem;
     padding: 1rem;
 }
 
@@ -61,6 +65,7 @@
     font-size: 1.6rem;
     color: var(--text-black-700);
     text-align: justify;
+    max-height: 27rem;
 }
 
 .cardInfo h2 {
