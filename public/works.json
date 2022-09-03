@@ -40,7 +40,7 @@
         "stack":"HTML, CSS, TS"
     },
     {
-        "id":4,
+        "id":5,
         "name":"momentum",
         "title":"Momentum",
         "description": "Analog of a Chrome application . The app shows the time, date and weather. The background image and greeting change depending on the time of day. The app also has an image slider, an audio player, a quote block, a todo list and a lot of configuration options (language, list of blocks, image source, image categories). Local storage stores a user name and a selected location.",
@@ -50,7 +50,7 @@
         "stack":"HTML, CSS, TS"
     },
     {
-        "id":7,
+        "id":6,
         "name":"asyncRace",
         "title":"async-race",
         "description": "Your customer has an idea to spend his money. He has hired some engineers who installed some radio-controlled equipment 📻 to real cars 🚗. To the all his collection of cars to be precise. He is eager to create kind of drag-racing competition in order to discover which car fastest. !!! To work, you need to start the server locally. The description is on GitHub.",
@@ -58,5 +58,15 @@
         "repo":"https://github.com/Mrak9087/async-race",
         "deploy":"https://mrak9087.github.io/async-race/async-race/",
         "stack":"HTML, CSS, TS"
+    },
+    {
+        "id":7,
+        "name":"math-game",
+        "title":"Math-Game",
+        "description": "A game for the development of memory. You can choose the difficulty and pictures, and you can also play for a while.",
+        "images":["mathGame.png"],
+        "repo":"https://github.com/Mrak9087/math-game",
+        "deploy":"https://mrak-math-game.netlify.app/",
+        "stack":"HTML, SCSS, React.js, Redux Toolkit"
     }
 ]}

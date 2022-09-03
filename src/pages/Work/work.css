@@ -1,5 +1,5 @@
 .work {
-    max-width: 100%;
+    width: 100%;
     font-size: 2rem;
     color: var(--text-black-900);
 }
