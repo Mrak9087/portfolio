@@ -51,25 +51,6 @@
   margin-bottom: 7rem;
 }
 
-.skillList,
-.edList,
-.expList {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1rem;
-  font-size: 2rem;
-  color: var(--text-black-700);
-  list-style: none;
-  padding-left: 2.5rem;
-  padding-top: 1rem;
-}
-
-.skillList li,
-.edList li,
-.expList li {
-  border-bottom: 1px solid var(--bg-black-50);
-}
-
 .mainImg {
   flex: 0 0 40%;
   max-width: 40%;

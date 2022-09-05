@@ -1,0 +1,14 @@
+.listString {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  font-size: 2rem;
+  color: var(--text-black-700);
+  list-style: none;
+  padding-left: 2.5rem;
+  padding-top: 1rem;
+}
+
+.listString li {
+  border-bottom: 1px solid var(--bg-black-50);
+}
