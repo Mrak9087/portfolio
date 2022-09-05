@@ -1,7 +1,7 @@
 import { faGithub, faOctopusDeploy } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios';
-import React, { memo, useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import Loader from '../../component/Loader';
 import SectionTitle from '../../component/SectionTitle';
@@ -24,6 +24,10 @@ const Work = () => {
   useEffect(() => {
     getWork();
   }, []);
+
+  if (!workItem) {
+    return <div className='notFound'>Work is not found</div>
+  }
 
   return (
     <div className="work">

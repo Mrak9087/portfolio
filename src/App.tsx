@@ -1,18 +1,13 @@
 import React from 'react';
-import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 
-import Header from './component/Header';
-import Aside from './component/Aside';
-import Container from './component/Container';
-import Menu from './component/Menu';
 import Main from './pages/Main';
 import Work from './pages/Work';
-import Logo from './component/Logo';
-import SwitcherTheme from './component/SwitcherTheme';
 import Contacts from './pages/Contacts';
 import Layout from './Layout';
 import Portfolio from './pages/Portfolio';
+import NotFound from './pages/NotFound';
 
 function App() {
   return (
@@ -25,6 +20,7 @@ function App() {
             <Route path=":work" element={<Work />} />
           </Route>
           <Route path="contacts" element={<Contacts />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>
