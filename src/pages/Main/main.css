@@ -51,7 +51,7 @@
     margin-bottom: 7rem;
 }
 
-.skillList, .edList{
+.skillList, .edList, .expList{
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
@@ -62,7 +62,7 @@
     padding-top: 1rem;
 }
 
-.skillList li, .edList li {
+.skillList li, .edList li, .expList li {
     border-bottom: 1px solid var(--bg-black-50);
 }
 

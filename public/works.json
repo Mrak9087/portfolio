@@ -67,6 +67,6 @@
         "images":["mathGame.png"],
         "repo":"https://github.com/Mrak9087/math-game",
         "deploy":"https://mrak-math-game.netlify.app/",
-        "stack":"HTML, SCSS, React.js, Redux Toolkit"
+        "stack":"HTML, CSS, React.js, Redux Toolkit"
     }
 ]}

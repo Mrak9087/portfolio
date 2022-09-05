@@ -48,6 +48,14 @@ const Main = () => {
       </div>
       <div className="mainRow">
         <SectionTitle text="Experience"/>
+        <ul className="expList">
+          <li>2008 - 2009 / Balashovsky Institute of Saratov State University / Laboratorian</li>
+          <li>2010 - 2011 / Balashovsky Institute of Saratov State University / Engineer (Developer)</li>
+          <li>2011 - 2015 / Social support / Leading Specialist (System administrator)</li>
+          <li>2015 - 2018 / Urban Heating Networks Balashov / Specialist (System administrator)</li>
+          <li>2018 - 2019 / Urban Heating Networks Balashov / Network administrator</li>
+          <li>2020 - until now / MFC / Leading Specialist (System administrator)</li>
+        </ul>
       </div>
       
     </div>
