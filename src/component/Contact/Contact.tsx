@@ -16,11 +16,11 @@ const Contact = ({contactIcon, contactLink, contactTitle, linkTitle}: IContact) 
 
     return (
         <div className="contactsItem">
-            <div className="itemContent">
+            <a href={contactLink} target="_blank" className="contactLink">
                 <FontAwesomeIcon icon={contactIcon} size='4x'/>
                 <h2 className="contactTitle">{contactTitle}</h2>
-                <a href={contactLink} target="_blank" className="contactLink">{linkTitle}</a>
-            </div>
+                <span  className="contactName">{linkTitle}</span>
+            </a>
         </div>
     )
 }

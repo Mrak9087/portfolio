@@ -37,7 +37,7 @@ const CONTACTS = [
         contactIcon:faMapLocation,
         contactTitle:'Address',
         linkTitle:`Saratov region village Turki`,
-        contactLink:'#',
+        contactLink:'https://yandex.ru/maps/geo/rabochiy_posyolok_turki/53096791/?ll=43.271816%2C51.984392&z=14.33',
     }
 
 ]
