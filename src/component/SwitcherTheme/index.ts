@@ -1,3 +1,3 @@
-import SwitcherTheme from "./SwitcherTheme";
+import SwitcherTheme from './SwitcherTheme';
 
 export default SwitcherTheme;

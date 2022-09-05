@@ -1,21 +1,21 @@
-.contacts{
-    width: 100%;
-    color: var(--text-black-900);
-    background-color: var(--bg-black-900);
+.contacts {
+  width: 100%;
+  color: var(--text-black-900);
+  background-color: var(--bg-black-900);
 }
 
-.contactsContent{
-    padding: 3rem 1.5rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    width: 100%;
+.contactsContent {
+  padding: 3rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
-    .contacts {
-        padding: 1rem;
-        padding-bottom: 10.5rem;
-    }
+  .contacts {
+    padding: 1rem;
+    padding-bottom: 10.5rem;
+  }
 }

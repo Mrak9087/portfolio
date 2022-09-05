@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
 import './sectionTitle.css';
 
 interface ISectionTitle {
-    text:string;
+  text: string;
 }
 
-const SectionTitle = ({text}:ISectionTitle) => {
+const SectionTitle = ({ text }: ISectionTitle) => {
   return (
     <div className="sectionTitle">
       <h2>{text}</h2>

@@ -1,75 +1,74 @@
 .card {
-    display: block;
-    position: relative;
-    width: 30rem;
-    height: 40rem;
+  display: block;
+  position: relative;
+  width: 30rem;
+  height: 40rem;
 }
 
-.card::before{
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    z-index: 0;
+.card::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: 0;
 }
 
-.card::after{
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    z-index: 0;
-    transition: all 0.5s ease;
-    
+.card::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: 0;
+  transition: all 0.5s ease;
 }
 
 .card::after,
 .card::before {
-    background-image: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
-    pointer-events: none;
+  background-image: linear-gradient(235deg, #89ff00, #010615, #00bcd4);
+  pointer-events: none;
 }
 
 .card:hover::after {
-    filter: blur(15px);
+  filter: blur(15px);
 }
 
-.cardContent{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-color: var(--bg-black-100);
-    padding-bottom: 1.5rem;
-    overflow: hidden;
-    z-index: 1;
+.cardContent {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: var(--bg-black-100);
+  padding-bottom: 1.5rem;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .cardImg {
-    width: 100%;
+  width: 100%;
 }
 
-.cardImg img{
-    width: 100%;
+.cardImg img {
+  width: 100%;
 }
 
-.cardInfo{
-    overflow-y: hidden;
-    max-height: 23rem;
-    padding: 1rem;
+.cardInfo {
+  overflow-y: hidden;
+  max-height: 23rem;
+  padding: 1rem;
 }
 
 .cardInfo p {
-    font-size: 1.6rem;
-    color: var(--text-black-700);
-    text-align: justify;
-    max-height: 11.5rem;
+  font-size: 1.6rem;
+  color: var(--text-black-700);
+  text-align: justify;
+  max-height: 11.5rem;
 }
 
 .cardInfo h2 {
-    color: var(--text-black-900);
-    text-align: center;
-    font-size: 1.8rem;
+  color: var(--text-black-900);
+  text-align: center;
+  font-size: 1.8rem;
 }

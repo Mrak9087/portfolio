@@ -1,27 +1,27 @@
-@font-face{
-    font-family: "Poppins";
-    src: url("./assets/fonts/Poppins-Regular.ttf");
-    font-weight: normal; /*400*/
-	font-style: normal;
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Regular.ttf');
+  font-weight: normal; /*400*/
+  font-style: normal;
 }
 
-@font-face{
-    font-family: "Poppins";
-    src: url("./assets/fonts/Poppins-SemiBold.ttf");
-    font-weight: 600; 
-	font-style: normal;
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
 }
 
-@font-face{
-    font-family: "Poppins";
-    src: url("./assets/fonts/Poppins-Bold.ttf");
-    font-weight: 700; 
-	font-style: normal;
+@font-face {
+  font-family: 'Poppins';
+  src: url('./assets/fonts/Poppins-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
 }
 
-@font-face{
-    font-family: "Clicker Script";
-    src: url("./assets/fonts/ClickerScript-Regular.ttf");
-    font-weight: normal; 
-	font-style: normal;
+@font-face {
+  font-family: 'Clicker Script';
+  src: url('./assets/fonts/ClickerScript-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
 }

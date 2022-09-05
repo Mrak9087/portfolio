@@ -1,21 +1,21 @@
 .header {
-    position: sticky;
-    top: 0;
-    display: flex;
-    width: 100%;
-    padding: 0 1.5rem;
-    background-color: #353232;
+  position: sticky;
+  top: 0;
+  display: flex;
+  width: 100%;
+  padding: 0 1.5rem;
+  background-color: #353232;
 }
 
 .nav {
-    display: flex;
+  display: flex;
 }
 
 .menu-item {
-    display: block;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    color: white;
-    font-weight: bold;
-    font-size: 2rem;
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
 }

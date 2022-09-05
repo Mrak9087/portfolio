@@ -17,7 +17,7 @@
   --text-black-900: #f2f2fc;
   --text-black-700: #fdf9ff;
   --skin-color: #ec1839;
-  --shadow: rgba(255,255,255,0.5);
+  --shadow: rgba(255, 255, 255, 0.5);
 }
 
 html,
@@ -36,7 +36,7 @@ body.light {
   --text-black-900: #302e4d;
   --text-black-700: #504e70;
   --skin-color: #ec1839;
-  --shadow: rgba(0,0,0,0.5);
+  --shadow: rgba(0, 0, 0, 0.5);
 }
 
 body {
@@ -46,14 +46,11 @@ body {
   background-color: var(--bg-black-900);
 }
 
-
-
 #root {
   height: 100%;
   width: 100%;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
