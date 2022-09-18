@@ -16,9 +16,10 @@ const Portfolio = () => {
   const getCards = async () => {
     setIsLoading(true);
     const response = await axios.get<IAxiosCard>('./works.json');
-    const data: IWork[] = response.data.works;
+    const data: IWork[] = response.data.works.reverse();
     setCards(data);
     setIsLoading(false);
+    
   };
 
   useEffect(() => {
