@@ -1,7 +1,7 @@
 import { faGithub, faOctopusDeploy } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { useParams } from 'react-router';
 import Loader from '../../component/Loader';
 import SectionTitle from '../../component/SectionTitle';
@@ -12,6 +12,11 @@ const Work = () => {
   const { work } = useParams();
   const [workItem, setWorkItem] = useState<IWork>();
   const [isLoading, setIsLoading] = useState(false);
+  
+  const isWorkExists = useMemo(()=>{
+    if (workItem) return true;
+    return false;
+  },[workItem])
 
   const getWork = async () => {
     setIsLoading(true);
@@ -25,7 +30,7 @@ const Work = () => {
     getWork();
   }, []);
 
-  if (!workItem) {
+  if (!isWorkExists && !isLoading) {
     return <div className='notFound'>Work is not found</div>
   }
 
