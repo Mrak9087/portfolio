@@ -82,12 +82,12 @@
     },
     {
       "id": 9,
-      "name": "seebattle",
-      "title": "See Battle",
+      "name": "seabattle",
+      "title": "Se Battle",
       "description": "A game from childhood. Arrange the ships in the dock yourself or leave it to the computer. And go into battle against the computer.",
-      "images": ["seebattle1.png", "seebattle2.png"],
+      "images": ["seabattle1.png", "seabattle2.png"],
       "repo": "https://github.com/Mrak9087/seabattle/tree/develop",
-      "deploy": "https://mrak-seebattle.netlify.app/",
+      "deploy": "https://mrak-seabattle.netlify.app/",
       "stack": "HTML, CSS, React.js, Redux Toolkit"
     }
   ]
