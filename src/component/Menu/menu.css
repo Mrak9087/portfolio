@@ -41,7 +41,7 @@
   }
 }
 
-@media screen and (max-width: 384px) {
+@media screen and (max-width: 448px) {
   .menuLink span {
     display: none;
   }

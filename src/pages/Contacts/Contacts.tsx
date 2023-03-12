@@ -1,5 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useTranslation } from 'react-i18next';
 
 import SectionTitle from '../../component/SectionTitle';
 
@@ -33,19 +33,21 @@ const CONTACTS = [
     linkTitle: 'mrak9087',
     contactLink: 'https://www.codewars.com/users/mrak9087',
   },
-  {
-    contactIcon: faMapLocation,
-    contactTitle: 'Address',
-    linkTitle: `Saratov region village Turki`,
-    contactLink:
-      'https://yandex.ru/maps/geo/rabochiy_posyolok_turki/53096791/?ll=43.271816%2C51.984392&z=14.33',
-  },
+  // {
+  //   contactIcon: faMapLocation,
+  //   contactTitle: 'Address',
+  //   linkTitle: `Saratov region village Turki`,
+  //   contactLink:
+  //     'https://yandex.ru/maps/geo/rabochiy_posyolok_turki/53096791/?ll=43.271816%2C51.984392&z=14.33',
+  // },
 ];
 
 const Contacts = () => {
+  const {t} = useTranslation();
+
   return (
     <div className="contacts">
-      <SectionTitle text="Contacts" />
+      <SectionTitle text={t('menu.contacts')} />
       <div className="contactsContent">
         {CONTACTS.map(({ contactIcon, contactLink, contactTitle, linkTitle }, index) => {
           return (
@@ -58,6 +60,12 @@ const Contacts = () => {
             />
           );
         })}
+        <Contact
+              contactIcon={faMapLocation}
+              contactLink={'https://yandex.ru/maps/geo/rabochiy_posyolok_turki/53096791/?ll=43.271816%2C51.984392&z=14.33'}
+              contactTitle={t('address.contactTitle')}
+              linkTitle={t('address.linkTitle')}
+            />
       </div>
     </div>
   );

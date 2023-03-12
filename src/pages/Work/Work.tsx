@@ -2,6 +2,7 @@ import { faGithub, faOctopusDeploy } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios';
 import React, { useEffect, useMemo, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router';
 import Loader from '../../component/Loader';
 import SectionTitle from '../../component/SectionTitle';
@@ -12,6 +13,7 @@ const Work = () => {
   const { work } = useParams();
   const [workItem, setWorkItem] = useState<IWork>();
   const [isLoading, setIsLoading] = useState(false);
+  const {t} = useTranslation();
   
   const isWorkExists = useMemo(()=>{
     if (workItem) return true;
@@ -42,7 +44,7 @@ const Work = () => {
           <Loader />
         ) : (
           <>
-            <div className="workDescr">{workItem?.description}</div>
+            <div className="workDescr">{t('cards.'+workItem?.name)}</div>
             <div className="workLinks">
               <div className="linkItem">
                 <a href={workItem?.repo} target="_blank">
@@ -58,7 +60,7 @@ const Work = () => {
               </div>
             </div>
             <div className="workTechnologies">
-              <span>Technologies: </span>
+              <span>{t('work.tech')}: </span>
               <span>{workItem?.stack}</span>
             </div>
             <div className="workImages">
