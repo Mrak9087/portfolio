@@ -60,7 +60,7 @@ const Work = () => {
               </div>
             </div>
             <div className="workTechnologies">
-              <span>Technologies: </span>
+              <span>{t('work.tech')}: </span>
               <span>{workItem?.stack}</span>
             </div>
             <div className="workImages">

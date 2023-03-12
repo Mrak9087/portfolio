@@ -18,10 +18,10 @@ const Main = () => {
         <div className="wrapperRow">
           <div className="mainInfo">
             <h3 className="hello">
-              Hello, my name is <span>Maxim</span>
+              {t('home.greeting')} <span>{t('home.name')}</span>
             </h3>
             <h3 className="myProfession">
-              I`m a <span className="typing">Frontend Developer</span>
+              {t('home.I')} <span className="typing">{t('home.typing')}</span>
             </h3>
             <p>
               {t('home.description')}
