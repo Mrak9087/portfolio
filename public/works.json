@@ -99,6 +99,16 @@
       "repo": "https://github.com/Mrak9087/game2048/tree/develop",
       "deploy": "https://mrak-2048.netlify.app/",
       "stack": "HTML, CSS, React.js"
+    },
+    {
+      "id": 11,
+      "name": "puzzle15",
+      "title": "Puzzle15",
+      "description": "Put the chips in order.",
+      "images": ["puzzle15.png"],
+      "repo": "https://github.com/Mrak9087/game_puzzle15/tree/develop",
+      "deploy": "https://mrak-puzzle15.netlify.app/",
+      "stack": "HTML, CSS, React, Redux Toolkit"
     }
   ]
 }

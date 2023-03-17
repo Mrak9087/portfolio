@@ -35,7 +35,8 @@
     "momentum": "Analog of a Chrome application . The app shows the time, date and weather. The background image and greeting change depending on the time of day. The app also has an image slider, an audio player, a quote block, a todo list and a lot of configuration options (language, list of blocks, image source, image categories). Local storage stores a user name and a selected location.",
     "artquiz": "An entertaining game for art lovers that has two game modes - artist quiz or picture quiz. In the settings, you can change the language, select a time mode, turn on or turn off the sound. Local storage stores data about completed rounds and the settings. This game is a single page application.",
     "christmas": "A game where you can choose your favorite toys, decorate a Christmas tree and make a lovely card for your friends and family. This is a single page application.",
-    "asyncRace": "Your customer has an idea to spend his money. He has hired some engineers who installed some radio-controlled equipment 📻 to real cars 🚗. To the all his collection of cars to be precise. He is eager to create kind of drag-racing competition in order to discover which car fastest. !!! To work, you need to start the server locally. The description is on GitHub."
+    "asyncRace": "Your customer has an idea to spend his money. He has hired some engineers who installed some radio-controlled equipment 📻 to real cars 🚗. To the all his collection of cars to be precise. He is eager to create kind of drag-racing competition in order to discover which car fastest. !!! To work, you need to start the server locally. The description is on GitHub.",
+    "puzzle15": "Put the chips in order."
   },
   "address": {
     "contactTitle": "Address",
