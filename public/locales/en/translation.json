@@ -36,7 +36,8 @@
     "artquiz": "An entertaining game for art lovers that has two game modes - artist quiz or picture quiz. In the settings, you can change the language, select a time mode, turn on or turn off the sound. Local storage stores data about completed rounds and the settings. This game is a single page application.",
     "christmas": "A game where you can choose your favorite toys, decorate a Christmas tree and make a lovely card for your friends and family. This is a single page application.",
     "asyncRace": "Your customer has an idea to spend his money. He has hired some engineers who installed some radio-controlled equipment 📻 to real cars 🚗. To the all his collection of cars to be precise. He is eager to create kind of drag-racing competition in order to discover which car fastest. !!! To work, you need to start the server locally. The description is on GitHub.",
-    "puzzle15": "Put the chips in order."
+    "puzzle15": "Put the chips in order.",
+    "tetris": "Tetris (Russian: Тетрис[a]) is a puzzle video game created in 1985 by Alexey Pajitnov, a Soviet software engineer.[1] It has been published by several companies for multiple platforms, most prominently during a dispute over the appropriation of the rights in the late 1980s. After a significant period of publication by Nintendo, the rights reverted to Pajitnov in 1996, who co-founded the Tetris Company with Henk Rogers to manage licensing."
   },
   "address": {
     "contactTitle": "Address",

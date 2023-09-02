@@ -109,6 +109,16 @@
       "repo": "https://github.com/Mrak9087/game_puzzle15/tree/develop",
       "deploy": "https://mrak-puzzle15.netlify.app/",
       "stack": "HTML, CSS, React, Redux Toolkit"
+    },
+    {
+      "id": 12,
+      "name": "tetris",
+      "title": "Tetris",
+      "description": "Put the chips in order.",
+      "images": ["tetris1.png", "tetris2.png"],
+      "repo": "https://github.com/Mrak9087/tetris_next/tree/dev",
+      "deploy": "https://tetris-next-eight.vercel.app/",
+      "stack": "HTML, NextJS, Tailwind CSS"
     }
   ]
 }
